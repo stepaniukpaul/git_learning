@@ -18,7 +18,10 @@ void main() {
   // ifElseConstruction();
 
   // task 7
-  switchStatementConstruction();
+  // switchStatementConstruction();
+
+  // task 8
+  forLoopConstruction();
 }
 
 void mathOperators() {
@@ -123,4 +126,32 @@ void switchStatementConstruction() {
     default:
       print('Невірний номер дня');
   }
+}
+
+void forLoopConstruction() {
+  List<int?> result1 = [];
+  List<int?> result2 = [];
+  int result3 = 0;
+
+  for (var i = 0; i < 10; i++) {
+    result1.add(i + 1);
+  }
+
+  for (var i = 0; i < 10; i++) {
+    if ((i + 1) % 2 == 0) {
+      result2.add(i + 1);
+    }
+  }
+
+  for (var i = 0; i < 10; i++) {
+    result3 += i + 1;
+  }
+
+  // Чи краще запускати цикл так:
+  // for (var i = 1; i <= 10; i++)
+  // Щоб уникнути (i + 1) в обчисленнях?
+
+  print('Всі числа від 1 до 10: $result1');
+  print('Тільки парні числа: $result2');
+  print('Сума чисел від 1 до 10: $result3');
 }
