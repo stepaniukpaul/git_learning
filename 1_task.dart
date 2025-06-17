@@ -1,8 +1,12 @@
 void main() {
   // task 1
   // mathOperators();
+
   // task 2
-  equalityOperators();
+  // equalityOperators();
+
+  // task 3
+  logicalOperators();
 }
 
 void mathOperators() {
@@ -23,4 +27,14 @@ void equalityOperators() {
   print('Чи більше число за 50: ${number > 50}');
   print('Чи менше число за 100: ${number < 100}');
   print('Чи ділиться число на 5 без залишку: ${(number % 5) == 0}');
+}
+
+void logicalOperators() {
+  bool hasMoney = true;
+  // bool hasMoney = false;
+  bool isStoreOpen = true;
+  // bool isStoreOpen = false;
+
+  print('Чи можна зробити покупку: ${hasMoney && isStoreOpen}');
+  print('Чи потрібно почекати: ${!isStoreOpen || !hasMoney}');
 }
