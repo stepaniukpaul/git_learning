@@ -24,7 +24,10 @@ void main() {
   // forLoopConstruction();
 
   // task 9
-  whileLoopConstruction();
+  // whileLoopConstruction();
+
+  // task 10
+  breakContinueLoopConstruction();
 }
 
 void mathOperators() {
@@ -168,4 +171,20 @@ void whileLoopConstruction() {
         : print('Непарне число: $number');
     number--;
   }
+}
+
+void breakContinueLoopConstruction() {
+  List<int?> result = [];
+
+  for (var i = 1; i < 20; i++) {
+    if (i > 15) {
+      break;
+    }
+    if (i % 3 == 0) {
+      result.add(i);
+      continue;
+    }
+  }
+
+  print('Числа від 1 до 20 кратні 3 та не більші за 15: $result');
 }
