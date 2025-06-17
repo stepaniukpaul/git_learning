@@ -9,7 +9,10 @@ void main() {
   // logicalOperators();
 
   // task 4
-  ternaryOperator();
+  // ternaryOperator();
+
+  // task 5
+  assignmentOperators();
 }
 
 void mathOperators() {
@@ -49,4 +52,18 @@ void ternaryOperator() {
 
   whatIsTemp ? print('Тепло') : print('Прохолодно');
   isCold ? print('Дуже холодно') : print('Прохолодно');
+}
+
+void assignmentOperators() {
+  double score = 0;
+  int correctAnswers = 17;
+  int mistakes = 3;
+  int totalQuestions = 20;
+
+  score += 10 * correctAnswers;
+  score -= 5 * mistakes;
+  score *= 2;
+  score /= totalQuestions;
+
+  print('Остаточний результат: $score');
 }
