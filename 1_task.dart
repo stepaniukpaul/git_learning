@@ -21,7 +21,10 @@ void main() {
   // switchStatementConstruction();
 
   // task 8
-  forLoopConstruction();
+  // forLoopConstruction();
+
+  // task 9
+  whileLoopConstruction();
 }
 
 void mathOperators() {
@@ -154,4 +157,15 @@ void forLoopConstruction() {
   print('Всі числа від 1 до 10: $result1');
   print('Тільки парні числа: $result2');
   print('Сума чисел від 1 до 10: $result3');
+}
+
+void whileLoopConstruction() {
+  int number = 10;
+
+  while (number > 0) {
+    (number % 2 == 0)
+        ? print('Парне число: $number')
+        : print('Непарне число: $number');
+    number--;
+  }
 }
