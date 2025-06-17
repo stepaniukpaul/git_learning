@@ -6,7 +6,10 @@ void main() {
   // equalityOperators();
 
   // task 3
-  logicalOperators();
+  // logicalOperators();
+
+  // task 4
+  ternaryOperator();
 }
 
 void mathOperators() {
@@ -37,4 +40,13 @@ void logicalOperators() {
 
   print('Чи можна зробити покупку: ${hasMoney && isStoreOpen}');
   print('Чи потрібно почекати: ${!isStoreOpen || !hasMoney}');
+}
+
+void ternaryOperator() {
+  int temperature = 9;
+  bool whatIsTemp = temperature > 25;
+  bool isCold = !whatIsTemp && (temperature < 10);
+
+  whatIsTemp ? print('Тепло') : print('Прохолодно');
+  isCold ? print('Дуже холодно') : print('Прохолодно');
 }
