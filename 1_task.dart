@@ -12,7 +12,10 @@ void main() {
   // ternaryOperator();
 
   // task 5
-  assignmentOperators();
+  // assignmentOperators();
+
+  // task 6
+  ifElseConstruction();
 }
 
 void mathOperators() {
@@ -66,4 +69,25 @@ void assignmentOperators() {
   score /= totalQuestions;
 
   print('Остаточний результат: $score');
+}
+
+void ifElseConstruction() {
+  int examScore = 56;
+  // int examScore = 120;
+
+  if (examScore >= 0 && examScore <= 100) {
+    if (examScore > 90) {
+      print('Відмінно! Оцінка: $examScore');
+    } else if (examScore >= 75) {
+      print('Добре! Оцінка: $examScore');
+    } else if (examScore >= 60) {
+      print('Задовільно. Оцінка: $examScore');
+    } else if (examScore >= 20) {
+      print('Не здано. Оцінка: $examScore');
+    } else {
+      print('Повторити курс. Оцінка: $examScore');
+    }
+  } else {
+    print('Упс... помилка. Невірне значення оцінки. ');
+  }
 }
